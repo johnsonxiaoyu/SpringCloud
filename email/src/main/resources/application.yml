@@ -1,0 +1,28 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
+server:
+  port: 8081
+
+spring:
+  mail:
+    host: smtp.qq.com #SMTP服务器地址
+    username: xxyaloa@foxmail.com #登陆账号
+    password: gvpouqraxsjhhghe    #登陆密码（或授权码）
+    properties:
+      from: xxyaloa@foxmail.com #邮件发信人（即真实邮箱）
+  thymeleaf:
+    cache: false
+    prefix: classpath:/views/
+  servlet:
+    multipart:
+      max-file-size: 10MB #限制单个文件大小
+      max-request-size: 50MB #限制请求总量
+  application:
+    name: service-email
+
+
+
